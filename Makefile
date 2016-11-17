@@ -1,8 +1,8 @@
 all: DPP
 
 DPP: DPP.c                                      
-	gcc $^ -o $@ -Wall -pthread                                                           
+	gcc $^ -o $@ -g -Wall -pthread                                                           
 
 clean:                                                     
-	rm -f DPP  
+	rm -f DPP
 

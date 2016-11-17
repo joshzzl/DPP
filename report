@@ -1,0 +1,14 @@
+/**************************************************
+ * Name: ZHANG Zhili
+ * UID: 3035141243
+ * Platform: Ubuntu 16.04
+ * Last Modified: Nov 16
+ * Compilation: gcc DPP.c -o DPP -g -Wall -pthread
+ * Library for DPP 
+ **************************************************/
+
+Apart from the n binary semaphores which control the n forks,
+another semaphore called "lock" is also introduced which is used to control the 
+number of philosophers waiting for the fork at any time.
+This "lock" is initialized to n-1 so that, at any time, only n-1 people could be 
+waiting for resources. This guarantees that no deadlock would happen.
